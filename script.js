@@ -95,20 +95,69 @@
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
 */
 
-function reverseString(string) {
-    let x = "";
-    for (let i = string.lenght; i > 0; i--) {
-        x = x.concat(string[i-1]);
-    }
-    return x;
-}
+// function reverseString(string) {
+//     let x = "";
+//     for (let i = string.lenght; i > 0; i--) {
+//         x = x.concat(string[i-1]);
+//     }
+//     return x;
+// }
 
-console.log(reverseString("ciaoBella"));
+// console.log(reverseString("ciaoBella"));
 
 /* ESERCIZIO 8
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 
-function upperFirst(parola) {
-    
-}
+// const upperFirstPhrase = function (str) { 
+//     //phrase as param 
+//     let words = str.split(' '); //dividi stringa in array 
+//     let finalString = [];
+
+//     for (let i = 0; i < words.length; i++) {  
+//         let firstChar = words[i].charAt(0); //prendi la prima lettera
+//         console.log(firstChar); //print primo carattere
+
+//         let uppercaseChar = firstChar.toUpperCase(); //rendi il carattere maiuscolo 
+//         let cutString = words[i].slice(1); //crea copia della porzione selezionata 
+//         let finalWord = uppercaseChar + cutString; //unisci il primo carattere in maiuscola al resto 
+
+//         finalString.push(finalWord);
+//     } 
+//         console.log(finalString.join('')); //crea stringa da array 
+        
+//     }
+// upperFirstPhrase('Hello Bello');
+
+
+/* ESERCIZIO 9
+ Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
+*/
+
+// function cutString (string) {
+//     let stock = "";
+//     for (let i = 0; i < string.lenght; i++) {
+//         if (i !== 0 && i !== string.lenght - 1) {
+//             stock = stock.concat(string[i]);
+//         }
+//     }
+//     return stock;
+// }
+// console.log(cutString("Ciao"));
+
+/* ESERCIZIO 10
+ Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
+*/
+
+// function giveMeRandom(num) {
+//     let z = [];
+//     let randomNumber;
+
+//     for (let i = 0; i < num; i++) {
+//         randomNumber = Math.floor(Math.random() * 10);
+//         z.push(randomNumber);
+//     }
+//     return z;
+// }
+
+// console.log(giveMeRandom(30));
